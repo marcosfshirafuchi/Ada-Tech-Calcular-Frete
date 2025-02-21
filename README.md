@@ -1,12 +1,20 @@
 # CEP Checker - Validação e Consulta de CEP
 
 ## Descrição
-O **CEP Checker** é uma API em Java projetada para melhorar a precisão e a velocidade das consultas de CEP. Ele resolve problemas comuns enfrentados por plataformas de e-commerce e sistemas que dependem de endereços precisos para calcular fretes e garantir um checkout eficiente.
+O CEP Checker é uma API em Java projetada para aprimorar a precisão e a velocidade das consultas de CEP. Ela visa solucionar problemas comuns enfrentados por plataformas de e-commerce e outros sistemas que dependem de endereços precisos para calcular fretes e garantir um checkout eficiente, oferecendo uma experiência otimizada para o usuário.
 
 ## Problema Resolvido
-- Corrige erros e lentidão em consultas de CEP, proporcionando uma melhor experiência ao usuário.
-- Fornece informações detalhadas sobre a região do comprador, auxiliando nos cálculos de entrega.
-- Identifica e trata CEPs inexistentes ou mal formatados, evitando falhas no checkout.
+- Otimização de Consultas de CEP:
+  - Implementação de sistema de cache para armazenar resultados de consultas frequentes, reduzindo o tempo de resposta e latência.
+  - Utilização de APIs de CEP confiáveis e de alta performance, que oferecem consultas rápidas e precisas.
+  - Infraestrutura escalável para suportar o volume de consultas, evitando lentidão em horários de pico.
+- Enriquecimento de Dados Geográficos:
+  - Integração com o banco de dados do IBGE para obter informações detalhadas sobre a região do CEP, como bairro, cidade, estado e coordenadas geográficas.
+  - Cálculo de distância entre vendedor e comprador utilizando as coordenadas geográficas, permitindo o cálculo preciso do frete.
+- Validação e Correção de CEPs:
+  - Validação do CEP em tempo real durante o cadastro, alertando o usuário sobre possíveis erros e oferecendo sugestões de correção.
+  - Normalização de dados para corrigir automaticamente erros de formatação nos CEPs.
+  - Banco de dados atualizado de CEPs, incluindo informações sobre CEPs especiais e áreas de risco.
 
 ## Demonstração
 A API pode ser consultada via requisições HTTP:
